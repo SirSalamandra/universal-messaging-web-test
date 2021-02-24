@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./src/nirvana.js"></script>
+  <script src="./src/index.js"></script>
+
+  <style>
+    body {
+      height: 100%;
+      width: 50%;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 550px) {
+      body {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: grid; grid-auto-flow: row; row-gap: 10px;">
+    <!-- <button>Teste</button> -->
+    <div style="display: grid; grid-auto-flow: row;">
+      <label>all messages:</label>
+      <textarea disabled id="all-messages" rows="10"></textarea>
+    </div>
+    <div style="display: grid; grid-auto-flow: row;">
+      <label>"aaaaa" messages:</label>
+      <textarea disabled id="aaaaa-messages" rows="10"></textarea>
+    </div>
+    <div style="display: grid; grid-auto-flow: row;">
+      <label>"bbbbb" messages:</label>
+      <textarea disabled id="bbbbb-messages" rows="10"></textarea>
+    </div>
+  </div>
+</body>
+
+</html>
